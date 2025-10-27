@@ -1,0 +1,277 @@
+# Global / generic .gitignore
+# Use this as a broad starting point for most projects. Tweak per-project as needed.
+
+####################
+# Operating Systems #
+####################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.nfs*
+
+####################
+# Editor / IDEs
+####################
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sdf
+*.dbmdl
+*.cache
+*.VC.db
+TestResults/
+build/
+[Bb]in/
+[Oo]bj/
+*.log
+*.nupkg
+packages/
+
+# JetBrains (IntelliJ, PyCharm, WebStorm, Rider, etc.)
+.idea/
+*.iml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+out/
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+bin/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+nbbuild/
+.nb-gradle/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim / Emacs / other editors
+.*.swp
+*~
+.session
+.emacs.desktop
+*~.nib
+
+####################
+# Languages / Tools
+####################
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+package-lock.json       # optional: many projects keep this, remove this line if you want to track it
+yarn.lock               # optional: keep if you want to track
+.dist/
+
+# Frontend frameworks / build tools
+dist/
+build/
+.out/
+.cache/
+.next/
+.nuxt/
+.public/
+.svelte-kit/
+.vite/
+.vbuild/
+parcel-cache/
+.cache-loader/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.coverage
+coverage.xml
+htmlcov/
+celerybeat-schedule
+django-debug.log
+
+# Java / Maven / Gradle
+*.class
+*.jar
+*.war
+*.ear
+target/
+build/
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+*.iml
+*.ipr
+*.iws
+
+# Go
+/bin/
+/pkg/
+*.exe
+*.test
+vendor/
+
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock             # optional: often committed for applications
+
+# Ruby
+*.gem
+/.bundle/
+vendor/bundle/
+log/
+tmp/
+*.rbc
+.bundle
+.byebug_history
+coverage/
+
+# PHP / Composer
+/vendor/
+composer.phar
+*.phpunit.result.cache
+phpunit.xml.cache
+
+# JavaScript test coverage
+coverage/
+lcov-report/
+
+# Docker
+docker-compose.override.yml
+docker-compose.*.yml
+**/Dockerfile.*
+**/.docker/
+
+# Kubernetes / Helm
+*.local.kube/
+helmfile.local.yaml
+
+####################
+# Secrets / Keys / Env
+####################
+# environment files
+.env
+.env.*
+.env.local
+.env.*.local
+.secret
+secrets.yml
+
+# keys / certificates
+*.pem
+*.key
+*.p12
+*.csr
+*.crt
+*.jks
+
+# cloud credentials
+.aws/
+.azure/
+.gcloud/
+credentials
+*.pub
+
+####################
+# Logs / runtime
+####################
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-error.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+####################
+# Generated files / Misc
+####################
+*.class
+*.psd
+*.bak
+*.backup
+*.orig
+*.rej
+*.sublime-*
+Thumbs.db
+desktop.ini
+
+# Archives / packages
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Lock files (optional; many projects track lock files)
+# Uncomment to ignore lockfiles if you don't want them in repo
+# package-lock.json
+# yarn.lock
+# composer.lock
+# Gemfile.lock
+
+####################
+# IDE / Tool specific extras (add or remove as needed)
+####################
+# Terraform
+*.tfstate
+*.tfstate.*
+.crash
+override.tf
+.terraform/
+
+# Ansible
+.fact_cache
+
+# JetBrains caches
+.idea/**/caches/
+.idea/**/libraries/
+.idea/**/shelf/
