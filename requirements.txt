@@ -1,8 +1,7 @@
-flask
+quart
+hypercorn
+aiohttp
 python-dotenv
-requests # For sync scripts (email bot, internet check)
-
 open-interpreter
-
 discord.py
-aiohttp # For async requests (Discord bot)
+aiosqlite
