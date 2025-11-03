@@ -6,7 +6,7 @@ load_dotenv()
 # -- Core Settings --
 ENABLED_SENSES = [
     "web",
-    # "discord",
+    "discord",
     # "email",
 ]
 LOG_LEVEL = "INFO"
@@ -15,6 +15,7 @@ LOG_FILE = "logs/nairo.log"
 # -- Model and API Keys --
 # Loaded from .env file
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+DISCORD_BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 # Add other API keys here if needed
 
 # -- Interpreter Settings --
