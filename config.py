@@ -6,7 +6,7 @@ load_dotenv()
 # -- Core Settings --
 ENABLED_SENSES = [
     "web",
-    "discord",
+    "discord_bot",
     # "email",
 ]
 LOG_LEVEL = "INFO"

@@ -61,8 +61,8 @@ async def main():
             sense_module = importlib.import_module(module_path)
             
             # Convention: Class name is CamelCase version of module name + "Sense"
-            # e.g., 'web' -> 'WebSense'
-            class_name = f"{sense_name.capitalize()}Sense"
+            # e.g., 'web' -> 'WebSense', 'discord_bot' -> 'DiscordBotSense'
+            class_name = f"{''.join(word.capitalize() for word in sense_name.split('_'))}Sense"
             sense_class = getattr(sense_module, class_name)
             
             sense_instance = sense_class(get_model_response, shutdown_event)

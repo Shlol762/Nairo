@@ -3,7 +3,7 @@ import discord
 import config
 from senses._base import SenseModule
 
-class DiscordSense(SenseModule):
+class DiscordBotSense(SenseModule):
     def __init__(self, model_responder, shutdown_event):
         super().__init__(model_responder, shutdown_event)
         # We'll use an intents object to declare what events our bot wants to receive.
