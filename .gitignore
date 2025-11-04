@@ -278,3 +278,4 @@ override.tf
 .idea/**/caches/
 .idea/**/libraries/
 .idea/**/shelf/
+terminate.md
